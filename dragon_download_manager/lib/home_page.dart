@@ -1,6 +1,7 @@
 import 'package:dragon_download_manager/responsive/mobileBody.dart';
 import 'package:dragon_download_manager/responsive/desktopBody.dart';
 import 'package:dragon_download_manager/responsive/responsive_layout.dart';
+import 'package:dragon_download_manager/responsive/tabletBody.dart';
 
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class _HomePageState extends State<HomePage> {
       body: ResponsiveLayout(
         mobileBody: Mobilebody(),
         desktopBody: DesktopBody(),
+        tabletBody: Tabletbody(),
       ),
     );
   }
