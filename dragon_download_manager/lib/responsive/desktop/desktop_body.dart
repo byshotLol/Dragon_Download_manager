@@ -8,7 +8,6 @@ class DesktopBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: myAppBar,
-      drawer: myDrawer,
     );
   }
 }

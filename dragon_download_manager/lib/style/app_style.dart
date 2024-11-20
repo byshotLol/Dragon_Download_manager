@@ -5,9 +5,10 @@ class AppStyles {
   static const borderColor = Color(0xff22222A);
   static const textColor = Color(0xffAAAAAA);
   static const iconColor = Color(0xffAAAAAA);
+  static const gradientColor1 = Color(0xffD177E4);
+  static const gradientColor2 = Color(0xffF8EBFB);
   static const headerStyle = TextStyle(
-    fontSize: 30,
-    color: textColor,
+    fontSize: 15,
     fontWeight: FontWeight.bold,
   );
   static const textSyle1 = TextStyle(

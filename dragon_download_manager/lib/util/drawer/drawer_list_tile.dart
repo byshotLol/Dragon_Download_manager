@@ -17,7 +17,7 @@ class DrawerListTile extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-            margin: EdgeInsets.symmetric(vertical: 12),
+            margin: const EdgeInsets.symmetric(vertical: 12),
             child: ListTile(
               leading: icon,
               title: Text(
