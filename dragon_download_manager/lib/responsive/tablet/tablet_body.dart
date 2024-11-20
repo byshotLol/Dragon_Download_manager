@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../style/app_style.dart';
+
 class Tabletbody extends StatelessWidget {
   const Tabletbody({super.key});
 
@@ -7,7 +9,7 @@ class Tabletbody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tablet'),
+        backgroundColor: AppStyles.borderColor,
       ),
     );
   }
