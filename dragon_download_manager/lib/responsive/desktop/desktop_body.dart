@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../style/app_style.dart';
+import '../../style/app_style.dart';
 
 class DesktopBody extends StatelessWidget {
   const DesktopBody({super.key});
