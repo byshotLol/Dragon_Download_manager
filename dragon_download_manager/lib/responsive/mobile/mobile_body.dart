@@ -1,4 +1,4 @@
-import 'package:dragon_download_manager/style/app_style.dart';
+import 'package:dragon_download_manager/util/constants.dart';
 import 'package:flutter/material.dart';
 
 class Mobilebody extends StatelessWidget {
@@ -7,9 +7,8 @@ class Mobilebody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppStyles.borderColor,
-      ),
+      appBar: myAppBar,
+      drawer: myDrawer,
     );
   }
 }

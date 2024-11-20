@@ -20,10 +20,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        scaffoldBackgroundColor:
-            AppStyles.bgColor, // Replace with your desired primary color
+        scaffoldBackgroundColor: AppStyles.bgColor,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
