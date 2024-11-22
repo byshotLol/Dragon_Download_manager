@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class AppStyles {
   // Colors
@@ -10,18 +11,23 @@ class AppStyles {
   static const gradientColor2 = Color(0xffF8EBFB);
 
   // Icons const
-  static const folderIcon = Icon(Icons.folder_outlined, color: iconColor);
-  static const urlIcon = Icon(Icons.add_link_rounded, color: iconColor);
-  static const resumeIcon = Icon(Icons.play_arrow_rounded, color: iconColor);
-  static const pauseIcon = Icon(Icons.pause_rounded, color: iconColor);
-  static const settingIcon = Icon(Icons.settings, color: iconColor);
-  static const browserIcon = Icon(Icons.language, color: iconColor);
-  static const torrentIcon = Icon(Icons.add_link_rounded, color: iconColor);
+  static const folderIcon =
+      Icon(HugeIcons.strokeRoundedFolder01, color: iconColor);
+  static const urlIcon =
+      Icon(HugeIcons.strokeRoundedFolder01, color: iconColor);
+  static const resumeIcon = Icon(HugeIcons.strokeRoundedPlay, color: iconColor);
+  static const pauseIcon = Icon(HugeIcons.strokeRoundedPause, color: iconColor);
+  static const settingIcon =
+      Icon(HugeIcons.strokeRoundedSettings02, color: iconColor);
+  static const browserIcon =
+      Icon(HugeIcons.strokeRoundedMagnet, color: iconColor);
+  static const torrentIcon =
+      Icon(HugeIcons.strokeRoundedInternet, color: iconColor);
 
   // TextSyles
 
   static const headerStyle = TextStyle(
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: FontWeight.bold,
   );
   static const textSyle1 = TextStyle(

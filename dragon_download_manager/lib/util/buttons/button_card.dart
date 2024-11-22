@@ -11,9 +11,9 @@ class ButtonCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton(
+    return IconButton(
       onPressed: () => print('jokly'),
-      child: icon,
+      icon: icon,
     );
   }
 }

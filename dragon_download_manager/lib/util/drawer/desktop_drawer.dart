@@ -44,7 +44,7 @@ var desktopAppBar = AppBar(
 
 var desktopDrawer = Drawer(
   width: 250,
-  backgroundColor: AppStyles.borderColor,
+  backgroundColor: AppStyles.iconColor,
   child: Container(
     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
     child: const Column(

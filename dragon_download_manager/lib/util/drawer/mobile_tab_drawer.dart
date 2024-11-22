@@ -21,12 +21,20 @@ var mobileTabAppBar = AppBar(
 
 var mobileTabDrawer = Drawer(
   width: 300,
-  backgroundColor: AppStyles.borderColor,
+  backgroundColor: AppStyles.iconColor,
   child: Container(
     margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
     child: Column(
       children: [
+        const SizedBox(
+          height: 20,
+        ),
         DrawerHeader(
+          // padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: AppStyles.bgColor,
+            borderRadius: BorderRadius.circular(20),
+          ),
           child: Column(
             children: [
               Image.asset(

@@ -21,6 +21,7 @@ class DrawerListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 260,
       margin: const EdgeInsets.only(top: 1, right: 1, left: 1, bottom: 0),
       decoration: BoxDecoration(
         color: AppStyles.bgColor,
