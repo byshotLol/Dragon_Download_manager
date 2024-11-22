@@ -4,30 +4,40 @@ import 'package:flutter/material.dart';
 class DrawerListTile extends StatelessWidget {
   final Icon icon;
   final String title;
-  const DrawerListTile({super.key, required this.icon, required this.title});
+  final Radius topLeft;
+  final Radius topRight;
+  final Radius bottomLeft;
+  final Radius bottomRight;
+  const DrawerListTile({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.topLeft,
+    required this.topRight,
+    required this.bottomLeft,
+    required this.bottomRight,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Card(
-            color: AppStyles.bgColor,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
-            ),
-            margin: const EdgeInsets.symmetric(vertical: 12),
-            child: ListTile(
-              leading: icon,
-              title: Text(
-                title,
-                style: AppStyles.textSyle1,
-              ),
-            ),
-          ),
-        )
-      ],
+    return Container(
+      margin: const EdgeInsets.only(top: 1, right: 1, left: 1, bottom: 0),
+      decoration: BoxDecoration(
+        color: AppStyles.bgColor,
+        borderRadius: BorderRadius.only(
+          topLeft: topLeft,
+          topRight: topRight,
+          bottomLeft: bottomLeft,
+          bottomRight: bottomRight,
+        ),
+      ),
+      child: ListTile(
+        leading: icon,
+        title: Text(
+          title,
+          style: AppStyles.textSyle1,
+        ),
+      ),
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:dragon_download_manager/util/constants.dart';
+import 'package:dragon_download_manager/util/drawer/mobile_tab_drawer.dart';
 import 'package:flutter/material.dart';
 
 class Tabletbody extends StatelessWidget {
@@ -7,8 +7,8 @@ class Tabletbody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar,
-      drawer: myDrawer,
+      appBar: mobileTabAppBar,
+      drawer: mobileTabDrawer,
     );
   }
 }
