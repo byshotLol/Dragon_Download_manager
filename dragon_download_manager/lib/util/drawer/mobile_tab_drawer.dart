@@ -1,6 +1,5 @@
 import 'package:dragon_download_manager/style/app_style.dart';
 import 'package:dragon_download_manager/util/drawer/drawer_curve.dart';
-import 'package:dragon_download_manager/util/gradfient_text/gradient_text.dart';
 import 'package:dragon_download_manager/util/search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -21,44 +20,15 @@ var mobileTabAppBar = AppBar(
 
 var mobileTabDrawer = Drawer(
   width: 300,
-  backgroundColor: AppStyles.iconColor,
+  backgroundColor: AppStyles.borderColor,
   child: Container(
     margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-    child: Column(
+    child: const Column(
       children: [
-        const SizedBox(
-          height: 20,
+        SizedBox(
+          height: 30,
         ),
-        DrawerHeader(
-          // padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-            color: AppStyles.bgColor,
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Column(
-            children: [
-              Image.asset(
-                'assets/images/DDM.png',
-                height: 80,
-                width: 80,
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const GradientText(
-                'Dragon Download Manager',
-                style: AppStyles.headerStyle,
-                gradient: LinearGradient(
-                  colors: [
-                    AppStyles.gradientColor1,
-                    AppStyles.gradientColor2,
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-        const DrawerCurve(),
+        DrawerCurve(),
       ],
     ),
   ),

@@ -13,16 +13,15 @@ class AppStyles {
   // Icons const
   static const folderIcon =
       Icon(HugeIcons.strokeRoundedFolder01, color: iconColor);
-  static const urlIcon =
-      Icon(HugeIcons.strokeRoundedFolder01, color: iconColor);
-  static const resumeIcon = Icon(HugeIcons.strokeRoundedPlay, color: iconColor);
-  static const pauseIcon = Icon(HugeIcons.strokeRoundedPause, color: iconColor);
+  static const urlIcon = Icon(HugeIcons.strokeRoundedFolder01, color: bgColor);
+  static const resumeIcon = Icon(HugeIcons.strokeRoundedPlay, color: bgColor);
+  static const pauseIcon = Icon(HugeIcons.strokeRoundedPause, color: bgColor);
   static const settingIcon =
-      Icon(HugeIcons.strokeRoundedSettings02, color: iconColor);
+      Icon(HugeIcons.strokeRoundedSettings02, color: bgColor);
   static const browserIcon =
-      Icon(HugeIcons.strokeRoundedMagnet, color: iconColor);
+      Icon(HugeIcons.strokeRoundedMagnet, color: bgColor);
   static const torrentIcon =
-      Icon(HugeIcons.strokeRoundedInternet, color: iconColor);
+      Icon(HugeIcons.strokeRoundedInternet, color: bgColor);
 
   // TextSyles
 

@@ -11,30 +11,31 @@ class HomeButtonContainer extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: AppStyles.borderColor,
       ),
-      child: const Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            ButtonCard(
-              icon: AppStyles.resumeIcon,
-            ),
-            ButtonCard(
-              icon: AppStyles.pauseIcon,
-            ),
-            ButtonCard(
-              icon: AppStyles.torrentIcon,
-            ),
-            ButtonCard(
-              icon: AppStyles.browserIcon,
-            ),
-            ButtonCard(
-              icon: AppStyles.settingIcon,
-            ),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          ButtonCard(
+            icon: AppStyles.resumeIcon,
+            onpressed: () {},
+          ),
+          ButtonCard(
+            icon: AppStyles.pauseIcon,
+            onpressed: () {},
+          ),
+          ButtonCard(
+            icon: AppStyles.torrentIcon,
+            onpressed: () {},
+          ),
+          ButtonCard(
+            icon: AppStyles.browserIcon,
+            onpressed: () {},
+          ),
+          ButtonCard(
+            icon: AppStyles.settingIcon,
+            onpressed: () {},
+          ),
+        ],
       ),
     );
   }
